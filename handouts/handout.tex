@@ -157,12 +157,20 @@ in the ER (Entity-Relation) diagram in Figure \ref{figure:albumDB}.
 \subsection*{Importing the Database}
 
 You will need to ``install'' the Albums database and data into your 
-own database on CSE.  Note: database in this sense is just a collection 
+own database on CSE.  Note: ``database'' in this sense is just a collection 
 of related tables; on CSE you only have access to one actual 
-database--the database named after your CSE login.  To import the 
-Albums database, you can either a) simply run the \mintinline{text}{albums.sql}
-script (you may need to add a \mintinline{sql}{use cselogin;} first)
-in MySQL Workbench; or b) from the command line:
+database--the database named after your CSE login.  
+
+\subsubsection*{Using MySQL Workbench}
+
+To install using MySQL Workbench, change the \mintinline{sql}{use LOGIN;}
+line to use your own login and then cut-paste the entire script into MySQL
+Workbench and run it.  
+
+\subsubsection*{Using The Command Line}
+
+To install from the command line change the \mintinline{sql}{use LOGIN;}
+line to use your own login and then:
 
 \begin{enumerate}
   \item Make sure the \mintinline{text}{albums.sql} DDL file (Data 
