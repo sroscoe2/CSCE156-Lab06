@@ -1,6 +1,5 @@
+# change LOGIN to your cse login
 use LOGIN;
-
-start transaction;
 
 drop table if exists AlbumSong;
 drop table if exists Song;
@@ -57,8 +56,6 @@ create table AlbumSong (
   #prevent duplicate entries
   constraint uniquePair unique index(albumId,songId)
 )engine=InnoDB,collate=latin1_general_cs;
-
-
 
 
 insert into Musician (musicianId,firstName,lastName,country) values (1, 'Lou', 'Reed', 'USA');
@@ -136,19 +133,19 @@ insert into BandMember (musicianId,bandId) values (8714,8804);
 
 ### Velvet Underground & Nico
 
-INSERT INTO Album (albumId,title,year,number,bandId) values (1,'The Velvet Underground & Nico',1967,1,1);
+insert into Album (albumId,title,year,number,bandId) values (1,'The Velvet Underground & Nico',1967,1,1);
 
-INSERT INTO Song (songId, title) VALUES (1, 'Sunday Morning');
-INSERT INTO Song (songId, title) VALUES (2, 'I\'m Waiting for the Man');
-INSERT INTO Song (songId, title) VALUES (3, 'Femme Fatale');
-INSERT INTO Song (songId, title) VALUES (4, 'Venus in Furs');
-INSERT INTO Song (songId, title) VALUES (5, 'Run Run Run');
-INSERT INTO Song (songId, title) VALUES (6, 'All Tomorrow\'s Parties');
-INSERT INTO Song (songId, title) VALUES (7, 'Heroin');
-INSERT INTO Song (songId, title) VALUES (8, 'There She Goes Again');
-INSERT INTO Song (songId, title) VALUES (9, 'I\'ll Be Your Mirror');
-INSERT INTO Song (songId, title) VALUES (10, 'The Black Angel\'s Death Song');
-INSERT INTO Song (songId, title) VALUES (11, 'European Son');
+insert into Song (songId, title) values (1, 'Sunday Morning');
+insert into Song (songId, title) values (2, 'I\'m Waiting for the Man');
+insert into Song (songId, title) values (3, 'Femme Fatale');
+insert into Song (songId, title) values (4, 'Venus in Furs');
+insert into Song (songId, title) values (5, 'Run Run Run');
+insert into Song (songId, title) values (6, 'All Tomorrow\'s Parties');
+insert into Song (songId, title) values (7, 'Heroin');
+insert into Song (songId, title) values (8, 'There She Goes Again');
+insert into Song (songId, title) values (9, 'I\'ll Be Your Mirror');
+insert into Song (songId, title) values (10, 'The Black Angel\'s Death Song');
+insert into Song (songId, title) values (11, 'European Son');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 174, 1,1);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 279, 1,2);
@@ -355,18 +352,18 @@ insert into BandMember (musicianId,bandId) values (3482,2478);
 
 ###Koloss
 
-INSERT INTO Album (albumId,title,year,number,bandId) values (654,'Koloss',2012,7,2478);
+insert into Album (albumId,title,year,number,bandId) values (654,'Koloss',2012,7,2478);
 
-INSERT INTO Song (songId, title) VALUES (1568, 'I Am Colossus');
-INSERT INTO Song (songId, title) VALUES (1569, 'The Demons Name Is Surveillance');
-INSERT INTO Song (songId, title) VALUES (1570, 'Do Not Look Down');
-INSERT INTO Song (songId, title) VALUES (1571, 'Behind The Sun');
-INSERT INTO Song (songId, title) VALUES (1572, 'The Hurt That Finds You First');
-INSERT INTO Song (songId, title) VALUES (1573, 'Marrow');
-INSERT INTO Song (songId, title) VALUES (1574, 'Break Those Bones Whose Sinews Gave It Motion');
-INSERT INTO Song (songId, title) VALUES (1575, 'Swarm');
-INSERT INTO Song (songId, title) VALUES (1576, 'Demiurge');
-INSERT INTO Song (songId, title) VALUES (1577, 'The Last Vigil');
+insert into Song (songId, title) values (1568, 'I Am Colossus');
+insert into Song (songId, title) values (1569, 'The Demons Name Is Surveillance');
+insert into Song (songId, title) values (1570, 'Do Not Look Down');
+insert into Song (songId, title) values (1571, 'Behind The Sun');
+insert into Song (songId, title) values (1572, 'The Hurt That Finds You First');
+insert into Song (songId, title) values (1573, 'Marrow');
+insert into Song (songId, title) values (1574, 'Break Those Bones Whose Sinews Gave It Motion');
+insert into Song (songId, title) values (1575, 'Swarm');
+insert into Song (songId, title) values (1576, 'Demiurge');
+insert into Song (songId, title) values (1577, 'The Last Vigil');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 283, 654,1568);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 281, 654,1569);
@@ -381,17 +378,17 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (10, 273, 
 
 ###ObZen
 
-INSERT INTO Album (albumId,title,year,number,bandId) values (655,'Obzen',2008,6,2478);
+insert into Album (albumId,title,year,number,bandId) values (655,'Obzen',2008,6,2478);
 
-INSERT INTO Song (songId, title) VALUES (1579, 'Combustion');
-INSERT INTO Song (songId, title) VALUES (1580, 'Electric Red');
-INSERT INTO Song (songId, title) VALUES (1581, 'Bleed');
-INSERT INTO Song (songId, title) VALUES (1582, 'Lethargica');
-INSERT INTO Song (songId, title) VALUES (1583, 'obZen');
-INSERT INTO Song (songId, title) VALUES (1584, 'This Spiteful Snake');
-INSERT INTO Song (songId, title) VALUES (1585, 'Pineal Gland Optics');
-INSERT INTO Song (songId, title) VALUES (1586, 'Pravus');
-INSERT INTO Song (songId, title) VALUES (1587, 'Dancers to a Discordant System');
+insert into Song (songId, title) values (1579, 'Combustion');
+insert into Song (songId, title) values (1580, 'Electric Red');
+insert into Song (songId, title) values (1581, 'Bleed');
+insert into Song (songId, title) values (1582, 'Lethargica');
+insert into Song (songId, title) values (1583, 'obZen');
+insert into Song (songId, title) values (1584, 'This Spiteful Snake');
+insert into Song (songId, title) values (1585, 'Pineal Gland Optics');
+insert into Song (songId, title) values (1586, 'Pravus');
+insert into Song (songId, title) values (1587, 'Dancers to a Discordant System');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 248, 655,1579);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 351, 655,1580);
@@ -405,10 +402,10 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (9, 576, 6
 
 ###I
 
-INSERT INTO Album (albumId,title,year,number,bandId) values (656,'I',2004,4,2478);
+insert into Album (albumId,title,year,number,bandId) values (656,'I',2004,4,2478);
 
 
-INSERT INTO Song (songId, title) VALUES (1588, 'I');
+insert into Song (songId, title) values (1588, 'I');
 
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 1260, 656,1588);
@@ -416,23 +413,23 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 1260, 
 
 ###Taylor
 
-INSERT INTO Band (bandID, name) values (4, 'Taylor Swift');
+insert into Band (bandID, name) values (4, 'Taylor Swift');
 
 
 ### Taylor Swift - Taylor Swift
-INSERT INTO Album (albumId, title, year, number, bandId) values (7, 'Taylor Swift', 2006, 1, 4);
+insert into Album (albumId, title, year, number, bandId) values (7, 'Taylor Swift', 2006, 1, 4);
 
-INSERT INTO Song (songId, title) VALUES (87, 'Tim McGraw');
-INSERT INTO Song (songId, title) VALUES (88, 'Picture to Burn');
-INSERT INTO Song (songId, title) VALUES (89, 'Teardrops on My Guitar');
-INSERT INTO Song (songId, title) VALUES (90, 'A Place in This World');
-INSERT INTO Song (songId, title) VALUES (91, 'Cold as You');
-INSERT INTO Song (songId, title) VALUES (92, 'The Outside');
-INSERT INTO Song (songId, title) VALUES (93, 'Tied Together with a Smile');
-INSERT INTO Song (songId, title) VALUES (94, 'Stay Beautiful');
-INSERT INTO Song (songId, title) VALUES (95, 'Should\'ve Said No');
-INSERT INTO Song (songId, title) VALUES (96, 'Mary\'s Song (Oh My My My)');
-INSERT INTO Song (songId, title) VALUES (97, 'Our Song');
+insert into Song (songId, title) values (87, 'Tim McGraw');
+insert into Song (songId, title) values (88, 'Picture to Burn');
+insert into Song (songId, title) values (89, 'Teardrops on My Guitar');
+insert into Song (songId, title) values (90, 'A Place in This World');
+insert into Song (songId, title) values (91, 'Cold as You');
+insert into Song (songId, title) values (92, 'The Outside');
+insert into Song (songId, title) values (93, 'Tied Together with a Smile');
+insert into Song (songId, title) values (94, 'Stay Beautiful');
+insert into Song (songId, title) values (95, 'Should\'ve Said No');
+insert into Song (songId, title) values (96, 'Mary\'s Song (Oh My My My)');
+insert into Song (songId, title) values (97, 'Our Song');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1,  334, 7, 87);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2,  175, 7, 88);
@@ -448,20 +445,20 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (11,  204,
 
 
 ### Taylor Swift - Fearless
-INSERT INTO Album (albumId, title, year, number, bandId) values (8, 'Fearless', 2008, 2, 4);
-INSERT INTO Song (songId, title) VALUES (98, 'Fearless');
-INSERT INTO Song (songId, title) VALUES (99, 'Fifteen');
-INSERT INTO Song (songId, title) VALUES (100, 'Love Story');
-INSERT INTO Song (songId, title) VALUES (101, 'Hey Stephen');
-INSERT INTO Song (songId, title) VALUES (102, 'White Horse');
-INSERT INTO Song (songId, title) VALUES (103, 'You Belong With Me');
-INSERT INTO Song (songId, title) VALUES (104, 'Breathe');
-INSERT INTO Song (songId, title) VALUES (105, 'Tell Me Why');
-INSERT INTO Song (songId, title) VALUES (106, 'You\'re Not Sorry');
-INSERT INTO Song (songId, title) VALUES (107, 'The Way I Loved You');
-INSERT INTO Song (songId, title) VALUES (108, 'Forever And Always');
-INSERT INTO Song (songId, title) VALUES (109, 'The Best Day');
-INSERT INTO Song (songId, title) VALUES (110, 'Change');
+insert into Album (albumId, title, year, number, bandId) values (8, 'Fearless', 2008, 2, 4);
+insert into Song (songId, title) values (98, 'Fearless');
+insert into Song (songId, title) values (99, 'Fifteen');
+insert into Song (songId, title) values (100, 'Love Story');
+insert into Song (songId, title) values (101, 'Hey Stephen');
+insert into Song (songId, title) values (102, 'White Horse');
+insert into Song (songId, title) values (103, 'You Belong With Me');
+insert into Song (songId, title) values (104, 'Breathe');
+insert into Song (songId, title) values (105, 'Tell Me Why');
+insert into Song (songId, title) values (106, 'You\'re Not Sorry');
+insert into Song (songId, title) values (107, 'The Way I Loved You');
+insert into Song (songId, title) values (108, 'Forever And Always');
+insert into Song (songId, title) values (109, 'The Best Day');
+insert into Song (songId, title) values (110, 'Change');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1,  241, 8, 98);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2,  294, 8, 99);
@@ -478,21 +475,21 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (12,  245,
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (13,  280, 8, 110);
 
 ### Taylor Swift - Speak Now
-INSERT INTO Album (albumId, title, year, number, bandId) values (9, 'Speak Now', 2010, 3, 4);
-INSERT INTO Song (songId, title) VALUES (111, 'Mine');
-INSERT INTO Song (songId, title) VALUES (112, 'Sparks Fly');
-INSERT INTO Song (songId, title) VALUES (113, 'Back to December');
-INSERT INTO Song (songId, title) VALUES (114, 'Speak Now');
-INSERT INTO Song (songId, title) VALUES (115, 'Dear John');
-INSERT INTO Song (songId, title) VALUES (116, 'Mean');
-INSERT INTO Song (songId, title) VALUES (117, 'The Story of Us');
-INSERT INTO Song (songId, title) VALUES (118, 'Never Grow Up');
-INSERT INTO Song (songId, title) VALUES (119, 'Enchanted');
-INSERT INTO Song (songId, title) VALUES (120, 'Better Than Revenge');
-INSERT INTO Song (songId, title) VALUES (121, 'Innocent');
-INSERT INTO Song (songId, title) VALUES (122, 'Haunted');
-INSERT INTO Song (songId, title) VALUES (123, 'Last Kiss');
-INSERT INTO Song (songID, title) VALUES (124, 'Long Live');
+insert into Album (albumId, title, year, number, bandId) values (9, 'Speak Now', 2010, 3, 4);
+insert into Song (songId, title) values (111, 'Mine');
+insert into Song (songId, title) values (112, 'Sparks Fly');
+insert into Song (songId, title) values (113, 'Back to December');
+insert into Song (songId, title) values (114, 'Speak Now');
+insert into Song (songId, title) values (115, 'Dear John');
+insert into Song (songId, title) values (116, 'Mean');
+insert into Song (songId, title) values (117, 'The Story of Us');
+insert into Song (songId, title) values (118, 'Never Grow Up');
+insert into Song (songId, title) values (119, 'Enchanted');
+insert into Song (songId, title) values (120, 'Better Than Revenge');
+insert into Song (songId, title) values (121, 'Innocent');
+insert into Song (songId, title) values (122, 'Haunted');
+insert into Song (songId, title) values (123, 'Last Kiss');
+insert into Song (songID, title) values (124, 'Long Live');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1,  230, 9, 111);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2,  260, 9, 112);
@@ -510,23 +507,23 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (13,  367,
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (14,  317, 9, 124);
 
 ### Taylor Swift - Red
-INSERT INTO Album (albumId, title, year, number, bandId) values (10, 'Red', 2012, 4, 4);
-INSERT INTO Song (songId, title) VALUES (125, 'State of Grace');
-INSERT INTO Song (songId, title) VALUES (126, 'Red');
-INSERT INTO Song (songId, title) VALUES (127, 'Treacherous');
-INSERT INTO Song (songId, title) VALUES (128, 'I Knew You Were Trouble');
-INSERT INTO Song (songId, title) VALUES (129, 'All Too Well');
-INSERT INTO Song (songId, title) VALUES (130, '22');
-INSERT INTO Song (songId, title) VALUES (131, 'I Almost Do');
-INSERT INTO Song (songId, title) VALUES (132, 'We Are Never Ever Getting Back Together');
-INSERT INTO Song (songId, title) VALUES (133, 'Stay Stay Stay');
-INSERT INTO Song (songId, title) VALUES (134, 'The Last Time');
-INSERT INTO Song (songId, title) VALUES (135, 'Holy Ground');
-INSERT INTO Song (songId, title) VALUES (136, 'Sad Beautiful Tragic');
-INSERT INTO Song (songId, title) VALUES (137, 'The Lucky One');
-INSERT INTO Song (songID, title) VALUES (138, 'Everything Has Changed');
-INSERT INTO Song (songID, title) VALUES (139, 'Starlight');
-INSERT INTO Song (songID, title) VALUES (140, 'Begin Again');
+insert into Album (albumId, title, year, number, bandId) values (10, 'Red', 2012, 4, 4);
+insert into Song (songId, title) values (125, 'State of Grace');
+insert into Song (songId, title) values (126, 'Red');
+insert into Song (songId, title) values (127, 'Treacherous');
+insert into Song (songId, title) values (128, 'I Knew You Were Trouble');
+insert into Song (songId, title) values (129, 'All Too Well');
+insert into Song (songId, title) values (130, '22');
+insert into Song (songId, title) values (131, 'I Almost Do');
+insert into Song (songId, title) values (132, 'We Are Never Ever Getting Back Together');
+insert into Song (songId, title) values (133, 'Stay Stay Stay');
+insert into Song (songId, title) values (134, 'The Last Time');
+insert into Song (songId, title) values (135, 'Holy Ground');
+insert into Song (songId, title) values (136, 'Sad Beautiful Tragic');
+insert into Song (songId, title) values (137, 'The Lucky One');
+insert into Song (songID, title) values (138, 'Everything Has Changed');
+insert into Song (songID, title) values (139, 'Starlight');
+insert into Song (songID, title) values (140, 'Begin Again');
 
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1,  295, 10, 125);
@@ -547,20 +544,20 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (15,  220,
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (16,  237, 10, 140);
 
 ### Taylor Swift - 1989
-INSERT INTO Album (albumId, title, year, number, bandId) values (11, '1989', 2014, 5, 4);
-INSERT INTO Song (songId, title) VALUES (141, 'Welcome to New York');
-INSERT INTO Song (songId, title) VALUES (142, 'Blank Space');
-INSERT INTO Song (songId, title) VALUES (143, 'Style');
-INSERT INTO Song (songId, title) VALUES (144, 'Out of The Woods');
-INSERT INTO Song (songId, title) VALUES (145, 'All You Had to Do Was Stay');
-INSERT INTO Song (songId, title) VALUES (146, 'Shake It Off');
-INSERT INTO Song (songId, title) VALUES (147, 'I Wish You Would');
-INSERT INTO Song (songId, title) VALUES (148, 'Bad Blood');
-INSERT INTO Song (songId, title) VALUES (149, 'Wildest Dreams');
-INSERT INTO Song (songId, title) VALUES (150, 'How You Get the Girl');
-INSERT INTO Song (songId, title) VALUES (151, 'This Love');
-INSERT INTO Song (songId, title) VALUES (152, 'I Know Places');
-INSERT INTO Song (songId, title) VALUES (153, 'Clean');
+insert into Album (albumId, title, year, number, bandId) values (11, '1989', 2014, 5, 4);
+insert into Song (songId, title) values (141, 'Welcome to New York');
+insert into Song (songId, title) values (142, 'Blank Space');
+insert into Song (songId, title) values (143, 'Style');
+insert into Song (songId, title) values (144, 'Out of The Woods');
+insert into Song (songId, title) values (145, 'All You Had to Do Was Stay');
+insert into Song (songId, title) values (146, 'Shake It Off');
+insert into Song (songId, title) values (147, 'I Wish You Would');
+insert into Song (songId, title) values (148, 'Bad Blood');
+insert into Song (songId, title) values (149, 'Wildest Dreams');
+insert into Song (songId, title) values (150, 'How You Get the Girl');
+insert into Song (songId, title) values (151, 'This Love');
+insert into Song (songId, title) values (152, 'I Know Places');
+insert into Song (songId, title) values (153, 'Clean');
 
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1,  212, 11, 141);
@@ -1417,18 +1414,18 @@ insert into BandMember (musicianId,bandId) values (154,151);
 
 ### The Glitch Mob - Drink the Sea
 
-INSERT INTO Album (albumId,title,year,number,bandId) values (150,'Drink the Sea',2010,1,150);
+insert into Album (albumId,title,year,number,bandId) values (150,'Drink the Sea',2010,1,150);
 
-INSERT INTO Song (songId, title) VALUES (3150, 'Animus Vox');
-INSERT INTO Song (songId, title) VALUES (3151, 'Bad Wings');
-INSERT INTO Song (songId, title) VALUES (3152, 'How to Be Eaten by a Woman');
-INSERT INTO Song (songId, title) VALUES (3153, 'A Dream Within a Dream');
-INSERT INTO Song (songId, title) VALUES (3154, 'Fistful of Silence');
-INSERT INTO Song (songId, title) VALUES (3155, 'Between Two Points');
-INSERT INTO Song (songId, title) VALUES (3156, 'We Swarm');
-INSERT INTO Song (songId, title) VALUES (3157, 'Drive It Like You Stole It');
-INSERT INTO Song (songId, title) VALUES (3158, 'Fortune Days');
-INSERT INTO Song (songId, title) VALUES (3159, 'Starve the Ego, Feed the Soul');
+insert into Song (songId, title) values (3150, 'Animus Vox');
+insert into Song (songId, title) values (3151, 'Bad Wings');
+insert into Song (songId, title) values (3152, 'How to Be Eaten by a Woman');
+insert into Song (songId, title) values (3153, 'A Dream Within a Dream');
+insert into Song (songId, title) values (3154, 'Fistful of Silence');
+insert into Song (songId, title) values (3155, 'Between Two Points');
+insert into Song (songId, title) values (3156, 'We Swarm');
+insert into Song (songId, title) values (3157, 'Drive It Like You Stole It');
+insert into Song (songId, title) values (3158, 'Fortune Days');
+insert into Song (songId, title) values (3159, 'Starve the Ego, Feed the Soul');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 645, 150,3150);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 640, 150,3151);
@@ -1580,22 +1577,22 @@ insert into BandMember (musicianId,bandId) values (1058,851);
 
 ### The outsiders - Needtobreathe, complete
 
-INSERT INTO Album (albumId,title,year,number,bandId) values (9000,'The Outsiders',2009,3,850);
+insert into Album (albumId,title,year,number,bandId) values (9000,'The Outsiders',2009,3,850);
 
-INSERT INTO Song (songId, title) VALUES (6000, 'The Outsiders');
-INSERT INTO Song (songId, title) VALUES (6001, 'Valley of Tomorrow');
-INSERT INTO Song (songId, title) VALUES (6002, 'Through Smoke');
-INSERT INTO Song (songId, title) VALUES (6003, 'Lay \'em Down');
-INSERT INTO Song (songId, title) VALUES (6004, 'What You\'ve Done to Me');
-INSERT INTO Song (songId, title) VALUES (6005, 'Hurricane');
-INSERT INTO Song (songId, title) VALUES (6006, 'These Hard Times');
-INSERT INTO Song (songId, title) VALUES (6007, 'Stones Under Rushing Water');
-INSERT INTO Song (songId, title) VALUES (6008, 'Prisoner');
-INSERT INTO Song (songId, title) VALUES (6009, 'Won\'t Turn Back');
-INSERT INTO Song (songId, title) VALUES (6010, 'Girl Named Tennessee');
-INSERT INTO Song (songId, title) VALUES (6011, 'Something Beautiful');
-INSERT INTO Song (songId, title) VALUES (6012, 'Garden');
-INSERT INTO Song (songId, title) VALUES (6013, 'Let Us Love');
+insert into Song (songId, title) values (6000, 'The Outsiders');
+insert into Song (songId, title) values (6001, 'Valley of Tomorrow');
+insert into Song (songId, title) values (6002, 'Through Smoke');
+insert into Song (songId, title) values (6003, 'Lay \'em Down');
+insert into Song (songId, title) values (6004, 'What You\'ve Done to Me');
+insert into Song (songId, title) values (6005, 'Hurricane');
+insert into Song (songId, title) values (6006, 'These Hard Times');
+insert into Song (songId, title) values (6007, 'Stones Under Rushing Water');
+insert into Song (songId, title) values (6008, 'Prisoner');
+insert into Song (songId, title) values (6009, 'Won\'t Turn Back');
+insert into Song (songId, title) values (6010, 'Girl Named Tennessee');
+insert into Song (songId, title) values (6011, 'Something Beautiful');
+insert into Song (songId, title) values (6012, 'Garden');
+insert into Song (songId, title) values (6013, 'Let Us Love');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 269, 9000,6000);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 242, 9000,6001);
@@ -1750,21 +1747,21 @@ insert into BandMember (musicianId,bandId) values (251,340);
 insert into BandMember (musicianId,bandId) values (800,800);
 
 #Florence and the Machine (1) Lungs
-INSERT INTO Album (albumId,title,year,number,bandId) values (320,'Lungs',2009,1,340);
+insert into Album (albumId,title,year,number,bandId) values (320,'Lungs',2009,1,340);
 
-INSERT INTO Song (songId, title) VALUES (2220, 'Dog Days Are Over');
-INSERT INTO Song (songId, title) VALUES (2221, 'Rabbit Heart (Raise It Up)');
-INSERT INTO Song (songId, title) VALUES (2222, 'I\'m Not Calling You A Liar');
-INSERT INTO Song (songId, title) VALUES (2223, 'Howl');
-INSERT INTO Song (songId, title) VALUES (2224, 'Kiss With a Fist');
-INSERT INTO Song (songId, title) VALUES (2225, 'Girl With One Eye');
-INSERT INTO Song (songId, title) VALUES (2226, 'Drumming Song');
-INSERT INTO Song (songId, title) VALUES (2227, 'Between Two Lungs');
-INSERT INTO Song (songId, title) VALUES (2228, 'Cosmic Love');
-INSERT INTO Song (songId, title) VALUES (2229, 'My Boy Builds Coffins');
-INSERT INTO Song (songId, title) VALUES (2230, 'Hurricane Drunk');
-INSERT INTO Song (songId, title) VALUES (2231, 'Blinding');
-INSERT INTO Song (songId, title) VALUES (2232, 'You\'ve Got The Love');
+insert into Song (songId, title) values (2220, 'Dog Days Are Over');
+insert into Song (songId, title) values (2221, 'Rabbit Heart (Raise It Up)');
+insert into Song (songId, title) values (2222, 'I\'m Not Calling You A Liar');
+insert into Song (songId, title) values (2223, 'Howl');
+insert into Song (songId, title) values (2224, 'Kiss With a Fist');
+insert into Song (songId, title) values (2225, 'Girl With One Eye');
+insert into Song (songId, title) values (2226, 'Drumming Song');
+insert into Song (songId, title) values (2227, 'Between Two Lungs');
+insert into Song (songId, title) values (2228, 'Cosmic Love');
+insert into Song (songId, title) values (2229, 'My Boy Builds Coffins');
+insert into Song (songId, title) values (2230, 'Hurricane Drunk');
+insert into Song (songId, title) values (2231, 'Blinding');
+insert into Song (songId, title) values (2232, 'You\'ve Got The Love');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 253, 320, 2220);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 232, 320, 2221);
@@ -1782,21 +1779,21 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (13, 169, 
 
 #Camp
 
-INSERT INTO Album (albumId,title,year,number,bandId) values (94,'Camp',2011,1,90);
+insert into Album (albumId,title,year,number,bandId) values (94,'Camp',2011,1,90);
 
-INSERT INTO Song (songId, title) VALUES (800, 'Outside');
-INSERT INTO Song (songId, title) VALUES (801, 'Fire Fly');
-INSERT INTO Song (songId, title) VALUES (802, 'Bonfire');
-INSERT INTO Song (songId, title) VALUES (803, 'All the Shine');
-INSERT INTO Song (songId, title) VALUES (804, 'Letter Home');
-INSERT INTO Song (songId, title) VALUES (805, 'Heartbeat');
-INSERT INTO Song (songId, title) VALUES (806, 'Backpackers');
-INSERT INTO Song (songId, title) VALUES (807, 'Les');
-INSERT INTO Song (songId, title) VALUES (808, 'Hold You Down');
-INSERT INTO Song (songId, title) VALUES (809, 'Kids');
-INSERT INTO Song (songId, title) VALUES (810, 'You See Me');
-INSERT INTO Song (songId, title) VALUES (811, 'Sunrise');
-INSERT INTO Song (songId, title) VALUES (812, 'That Power');
+insert into Song (songId, title) values (800, 'Outside');
+insert into Song (songId, title) values (801, 'Fire Fly');
+insert into Song (songId, title) values (802, 'Bonfire');
+insert into Song (songId, title) values (803, 'All the Shine');
+insert into Song (songId, title) values (804, 'Letter Home');
+insert into Song (songId, title) values (805, 'Heartbeat');
+insert into Song (songId, title) values (806, 'Backpackers');
+insert into Song (songId, title) values (807, 'Les');
+insert into Song (songId, title) values (808, 'Hold You Down');
+insert into Song (songId, title) values (809, 'Kids');
+insert into Song (songId, title) values (810, 'You See Me');
+insert into Song (songId, title) values (811, 'Sunrise');
+insert into Song (songId, title) values (812, 'That Power');
 
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 270, 94,800);
@@ -1859,19 +1856,19 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (18, 282, 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (19, 342, 95, 831);
 
 # Bleachers "Strange Desire"
-INSERT INTO Album (albumId,title,year,number,bandId) values (800,'Strange Desire',2014,1,800);
+insert into Album (albumId,title,year,number,bandId) values (800,'Strange Desire',2014,1,800);
 
-INSERT INTO Song (songId, title) VALUES (4801, 'Wild Heart');
-INSERT INTO Song (songId, title) VALUES (4802, 'Rollercoaster');
-INSERT INTO Song (songId, title) VALUES (4803, 'Shadow');
-INSERT INTO Song (songId, title) VALUES (4804, 'I Wanna Get Better');
-INSERT INTO Song (songId, title) VALUES (4805, 'Wake Me');
-INSERT INTO Song (songId, title) VALUES (4806, 'Reckless Love');
-INSERT INTO Song (songId, title) VALUES (4807, 'Take Me Away');
-INSERT INTO Song (songId, title) VALUES (4808, 'Like a River Runs');
-INSERT INTO Song (songId, title) VALUES (4809, 'You\'re Still A Mystery');
-INSERT INTO Song (songId, title) VALUES (4810, 'I\'m Ready to Move On / Wild Heart Reprise');
-INSERT INTO Song (songId, title) VALUES (4811, 'Who I Want You to Love');
+insert into Song (songId, title) values (4801, 'Wild Heart');
+insert into Song (songId, title) values (4802, 'Rollercoaster');
+insert into Song (songId, title) values (4803, 'Shadow');
+insert into Song (songId, title) values (4804, 'I Wanna Get Better');
+insert into Song (songId, title) values (4805, 'Wake Me');
+insert into Song (songId, title) values (4806, 'Reckless Love');
+insert into Song (songId, title) values (4807, 'Take Me Away');
+insert into Song (songId, title) values (4808, 'Like a River Runs');
+insert into Song (songId, title) values (4809, 'You\'re Still A Mystery');
+insert into Song (songId, title) values (4810, 'I\'m Ready to Move On / Wild Heart Reprise');
+insert into Song (songId, title) values (4811, 'Who I Want You to Love');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 200, 800,4801);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 188, 800,4802);
@@ -1887,19 +1884,19 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (11, 290, 
 
 
 # Paul Simon Graceland
-INSERT INTO Album (albumId,title,year,number,bandId) values (850,'Graceland',1986,8,950);
+insert into Album (albumId,title,year,number,bandId) values (850,'Graceland',1986,8,950);
 
-INSERT INTO Song (songId, title) VALUES (851, 'The Boy in the Bubble');
-INSERT INTO Song (songId, title) VALUES (852, 'Graceland');
-INSERT INTO Song (songId, title) VALUES (853, 'I Know What I Know');
-INSERT INTO Song (songId, title) VALUES (854, 'Gumboots');
-INSERT INTO Song (songId, title) VALUES (855, 'Diamonds on the Soles of Her Shoes');
-INSERT INTO Song (songId, title) VALUES (856, 'You Can Call Me Al');
-INSERT INTO Song (songId, title) VALUES (857, 'Under African Skies');
-INSERT INTO Song (songId, title) VALUES (858, 'Homeless');
-INSERT INTO Song (songId, title) VALUES (859, 'Crazy Love, Vol. II');
-INSERT INTO Song (songId, title) VALUES (860, 'That Was Your Mother');
-INSERT INTO Song (songId, title) VALUES (861, 'All Around the World or the Myth of Fingerprints');
+insert into Song (songId, title) values (851, 'The Boy in the Bubble');
+insert into Song (songId, title) values (852, 'Graceland');
+insert into Song (songId, title) values (853, 'I Know What I Know');
+insert into Song (songId, title) values (854, 'Gumboots');
+insert into Song (songId, title) values (855, 'Diamonds on the Soles of Her Shoes');
+insert into Song (songId, title) values (856, 'You Can Call Me Al');
+insert into Song (songId, title) values (857, 'Under African Skies');
+insert into Song (songId, title) values (858, 'Homeless');
+insert into Song (songId, title) values (859, 'Crazy Love, Vol. II');
+insert into Song (songId, title) values (860, 'That Was Your Mother');
+insert into Song (songId, title) values (861, 'All Around the World or the Myth of Fingerprints');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 239, 850,851);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 288, 850,852);
@@ -2288,20 +2285,20 @@ insert into BandMember (musicianId,bandId) values (305,301);
 insert into BandMember (musicianId,bandId) values (306,301);
 
 ##ALBUM 1 : One Direction - Four
-INSERT INTO Album (albumId,title,year,number,bandId) values (300,'Four',2014,1,300);
+insert into Album (albumId,title,year,number,bandId) values (300,'Four',2014,1,300);
 
-INSERT INTO Song (songId, title) VALUES (7300, 'Steal My Girl');
-INSERT INTO Song (songId, title) VALUES (7301, 'Ready To Run');
-INSERT INTO Song (songId, title) VALUES (7302, 'Where do Broken Hearts go');
-INSERT INTO Song (songId, title) VALUES (7303, '18');
-INSERT INTO Song (songId, title) VALUES (7304, 'Girl Almighty');
-INSERT INTO Song (songId, title) VALUES (7305, 'Fools Gold');
-INSERT INTO Song (songId, title) VALUES (7306, 'Night Changes');
-INSERT INTO Song (songId, title) VALUES (7307, 'No Control');
-INSERT INTO Song (songId, title) VALUES (7308, 'Fireproof');
-INSERT INTO Song (songId, title) VALUES (7309, 'Spaces');
-INSERT INTO Song (songId, title) VALUES (7310, 'Stockholm Syndrome');
-INSERT INTO Song (songId, title) VALUES (7311, 'Clouds');
+insert into Song (songId, title) values (7300, 'Steal My Girl');
+insert into Song (songId, title) values (7301, 'Ready To Run');
+insert into Song (songId, title) values (7302, 'Where do Broken Hearts go');
+insert into Song (songId, title) values (7303, '18');
+insert into Song (songId, title) values (7304, 'Girl Almighty');
+insert into Song (songId, title) values (7305, 'Fools Gold');
+insert into Song (songId, title) values (7306, 'Night Changes');
+insert into Song (songId, title) values (7307, 'No Control');
+insert into Song (songId, title) values (7308, 'Fireproof');
+insert into Song (songId, title) values (7309, 'Spaces');
+insert into Song (songId, title) values (7310, 'Stockholm Syndrome');
+insert into Song (songId, title) values (7311, 'Clouds');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 348, 300,7300);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 316, 300,7301);
@@ -2317,22 +2314,22 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (11, 335, 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (12, 352, 300,7311);
 
 ##ALBUM 2 : One Direction - Up All Night
-INSERT INTO Album (albumId,title,year,number,bandId) values (5301,'Up All Night',2011,2,300);
+insert into Album (albumId,title,year,number,bandId) values (5301,'Up All Night',2011,2,300);
 
-INSERT INTO Song (songId, title) VALUES (7312, 'What makes you Beautiful');
-INSERT INTO Song (songId, title) VALUES (7313, 'Gotta be you');
-INSERT INTO Song (songId, title) VALUES (7314, 'One Thing');
-INSERT INTO Song (songId, title) VALUES (7315, 'More than this');
-INSERT INTO Song (songId, title) VALUES (7316, 'Up all Night');
-INSERT INTO Song (songId, title) VALUES (7317, 'I Wish');
-INSERT INTO Song (songId, title) VALUES (7318, 'Tell me a Lie');
-INSERT INTO Song (songId, title) VALUES (7319, 'Taken');
-INSERT INTO Song (songId, title) VALUES (7320, 'I want');
-INSERT INTO Song (songId, title) VALUES (7321, 'Everything about you');
-INSERT INTO Song (songId, title) VALUES (7322, 'Same Mistakes');
-INSERT INTO Song (songId, title) VALUES (7323, 'Save you tonight');
-INSERT INTO Song (songId, title) VALUES (7324, 'Stole my Heart');
-INSERT INTO Song (songId, title) VALUES (7325, 'Stand Up');
+insert into Song (songId, title) values (7312, 'What makes you Beautiful');
+insert into Song (songId, title) values (7313, 'Gotta be you');
+insert into Song (songId, title) values (7314, 'One Thing');
+insert into Song (songId, title) values (7315, 'More than this');
+insert into Song (songId, title) values (7316, 'Up all Night');
+insert into Song (songId, title) values (7317, 'I Wish');
+insert into Song (songId, title) values (7318, 'Tell me a Lie');
+insert into Song (songId, title) values (7319, 'Taken');
+insert into Song (songId, title) values (7320, 'I want');
+insert into Song (songId, title) values (7321, 'Everything about you');
+insert into Song (songId, title) values (7322, 'Same Mistakes');
+insert into Song (songId, title) values (7323, 'Save you tonight');
+insert into Song (songId, title) values (7324, 'Stole my Heart');
+insert into Song (songId, title) values (7325, 'Stand Up');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 317, 5301,7312);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 401, 5301,7313);
@@ -2350,20 +2347,20 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (13, 325, 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (14, 324, 5301,7325);
 
 ##ALBUM 3 : Fun - Aim and Ignite
-INSERT INTO Album (albumId,title,year,number,bandId) values (5302,'Aim and Ignite',2009,1,301);
+insert into Album (albumId,title,year,number,bandId) values (5302,'Aim and Ignite',2009,1,301);
 
-INSERT INTO Song (songId, title) VALUES (7326, 'Be Calm');
-INSERT INTO Song (songId, title) VALUES (7327, 'Benson Hedges');
-INSERT INTO Song (songId, title) VALUES (7328, 'All the Pretty Girls');
-INSERT INTO Song (songId, title) VALUES (7329, 'I wanna be the one');
-INSERT INTO Song (songId, title) VALUES (7330, 'At least I am not as Sad');
-INSERT INTO Song (songId, title) VALUES (7331, 'Light a Roman Candle with me');
-INSERT INTO Song (songId, title) VALUES (7332, 'Walking the dog');
-INSERT INTO Song (songId, title) VALUES (7333, 'Barlights');
-INSERT INTO Song (songId, title) VALUES (7334, 'The Gambler');
-INSERT INTO Song (songId, title) VALUES (7335, 'Take your Time(Coming Home)');
-INSERT INTO Song (songId, title) VALUES (7336, 'Walking the dog II');
-INSERT INTO Song (songId, title) VALUES (7337, 'Take your Time(Acoustic)');
+insert into Song (songId, title) values (7326, 'Be Calm');
+insert into Song (songId, title) values (7327, 'Benson Hedges');
+insert into Song (songId, title) values (7328, 'All the Pretty Girls');
+insert into Song (songId, title) values (7329, 'I wanna be the one');
+insert into Song (songId, title) values (7330, 'At least I am not as Sad');
+insert into Song (songId, title) values (7331, 'Light a Roman Candle with me');
+insert into Song (songId, title) values (7332, 'Walking the dog');
+insert into Song (songId, title) values (7333, 'Barlights');
+insert into Song (songId, title) values (7334, 'The Gambler');
+insert into Song (songId, title) values (7335, 'Take your Time(Coming Home)');
+insert into Song (songId, title) values (7336, 'Walking the dog II');
+insert into Song (songId, title) values (7337, 'Take your Time(Acoustic)');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 410, 5302,7326);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 400, 5302,7327);
@@ -2379,18 +2376,18 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (11, 430, 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (12, 357, 5302,7337);
 
 ##ALBUM 4 : Fun - Some Nights
-INSERT INTO Album (albumId,title,year,number,bandId) values (5303,'Some Nights',2012,2,301);
+insert into Album (albumId,title,year,number,bandId) values (5303,'Some Nights',2012,2,301);
 
-INSERT INTO Song (songId, title) VALUES (7338, 'Some nights');
-INSERT INTO Song (songId, title) VALUES (7339, 'We are young');
-INSERT INTO Song (songId, title) VALUES (7340, 'Carry On');
-INSERT INTO Song (songId, title) VALUES (7341, 'It gets better');
-INSERT INTO Song (songId, title) VALUES (7342, 'Why am I the one');
-INSERT INTO Song (songId, title) VALUES (7343, 'All Alone');
-INSERT INTO Song (songId, title) VALUES (7344, 'All Alright');
-INSERT INTO Song (songId, title) VALUES (7345, 'One foot');
-INSERT INTO Song (songId, title) VALUES (7346, 'Stars');
-INSERT INTO Song (songId, title) VALUES (7347, 'Out on the Town');
+insert into Song (songId, title) values (7338, 'Some nights');
+insert into Song (songId, title) values (7339, 'We are young');
+insert into Song (songId, title) values (7340, 'Carry On');
+insert into Song (songId, title) values (7341, 'It gets better');
+insert into Song (songId, title) values (7342, 'Why am I the one');
+insert into Song (songId, title) values (7343, 'All Alone');
+insert into Song (songId, title) values (7344, 'All Alright');
+insert into Song (songId, title) values (7345, 'One foot');
+insert into Song (songId, title) values (7346, 'Stars');
+insert into Song (songId, title) values (7347, 'Out on the Town');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 437, 5303,7338);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 410, 5303,7339);
@@ -2404,22 +2401,22 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (9, 653, 5
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (10, 422, 5303,7347);
 
 ##ALBUM 5 : One Direction - Midnight Memories
-INSERT INTO Album (albumId,title,year,number,bandId) values (5304,'Midnight Memories',2013,3,300);
+insert into Album (albumId,title,year,number,bandId) values (5304,'Midnight Memories',2013,3,300);
 
-INSERT INTO Song (songId, title) VALUES (7348, 'Best Song Ever');
-INSERT INTO Song (songId, title) VALUES (7349, 'Story of my life');
-INSERT INTO Song (songId, title) VALUES (7350, 'Diana');
-INSERT INTO Song (songId, title) VALUES (7351, 'Midnight memories');
-INSERT INTO Song (songId, title) VALUES (7352, 'You and I');
-INSERT INTO Song (songId, title) VALUES (7353, 'Dont forget where you belong');
-INSERT INTO Song (songId, title) VALUES (7354, 'Strong');
-INSERT INTO Song (songId, title) VALUES (7355, 'Happily');
-INSERT INTO Song (songId, title) VALUES (7356, 'Right Now');
-INSERT INTO Song (songId, title) VALUES (7357, 'Little Black Dress');
-INSERT INTO Song (songId, title) VALUES (7358, 'Through the Dark');
-INSERT INTO Song (songId, title) VALUES (7359, 'Somthing Great');
-INSERT INTO Song (songId, title) VALUES (7360, 'Little White Lies');
-INSERT INTO Song (songId, title) VALUES (7361, 'Better than Words');
+insert into Song (songId, title) values (7348, 'Best Song Ever');
+insert into Song (songId, title) values (7349, 'Story of my life');
+insert into Song (songId, title) values (7350, 'Diana');
+insert into Song (songId, title) values (7351, 'Midnight memories');
+insert into Song (songId, title) values (7352, 'You and I');
+insert into Song (songId, title) values (7353, 'Dont forget where you belong');
+insert into Song (songId, title) values (7354, 'Strong');
+insert into Song (songId, title) values (7355, 'Happily');
+insert into Song (songId, title) values (7356, 'Right Now');
+insert into Song (songId, title) values (7357, 'Little Black Dress');
+insert into Song (songId, title) values (7358, 'Through the Dark');
+insert into Song (songId, title) values (7359, 'Somthing Great');
+insert into Song (songId, title) values (7360, 'Little White Lies');
+insert into Song (songId, title) values (7361, 'Better than Words');
 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (1, 321, 5304,7348);
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (2, 404, 5304,7349);
@@ -2437,7 +2434,7 @@ insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (13, 318, 
 insert into AlbumSong (trackNumber,trackLength,albumId,songId) values (14, 327, 5304,7361);
 
 
-INSERT INTO Song (`title`) VALUES 
+insert into Song (`title`) values 
  ( "Wouldn't It Be Nice" ) , 
  ( "You Still Believe in Me" ) , 
  ( "That's Not Me" ) , 
@@ -2487,7 +2484,7 @@ INSERT INTO Song (`title`) VALUES
  ( "Rock the World" ) , 
  ( "Where I Belong" );
  
- INSERT INTO Musician (`lastName`, `firstName`, `country`) VALUES 
+ insert into Musician (`lastName`, `firstName`, `country`) values 
  ( "Wilson", "Brian", "USA"  ), 
  ( "Love", "Mike", "USA"  ), 
  ( "Jardine", "Al", "USA"  ), 
@@ -2499,13 +2496,13 @@ INSERT INTO Song (`title`) VALUES
  ( "Parsberg", "Michael", "Denmark"  ), 
  ( "Odden", "Alexander", "Norway"  );
 
-INSERT INTO Band (`name`) Values
+insert into Band (`name`) Values
  ('The Beach Boys'),
  ('MGMT'),
  ('Aviators'),
  ('Pegboard Nerds');
 
-INSERT INTO Album (`title`, `year`, `number`, `bandId`) VALUES 
+insert into Album (`title`, `year`, `number`, `bandId`) values 
  ( "Pet Sounds", 1966, 11, (select bandId from Band where name = "The Beach Boys" ) ), 
  ( "Smiley Smile", 1967, 12, (select bandId from Band where name = "The Beach Boys" ) ), 
  ( "Congratulations", 2010, 2, (select bandId from Band where name = "MGMT" ) ), 
@@ -2514,7 +2511,7 @@ INSERT INTO Album (`title`, `year`, `number`, `bandId`) VALUES
  
  
  
- INSERT INTO AlbumSong (`TrackNumber`, `TrackLength`, `albumId`, `songId`) VALUES 
+ insert into AlbumSong (`TrackNumber`, `TrackLength`, `albumId`, `songId`) values 
  ( 1, 145, (select albumId from Album where title = "Pet Sounds" ), (select songId from Song where title = "Wouldn't It Be Nice" )  ), 
  ( 2, 151, (select albumId from Album where title = "Pet Sounds" ), (select songId from Song where title = "You Still Believe in Me" )  ), 
  ( 3, 148, (select albumId from Album where title = "Pet Sounds" ), (select songId from Song where title = "That's Not Me" )  ), 
@@ -2564,7 +2561,7 @@ INSERT INTO Album (`title`, `year`, `number`, `bandId`) VALUES
  ( 9, 370, (select albumId from Album where title = "Mirrors" ), (select songId from Song where title = "Rock the World" )  ), 
  ( 10, 307, (select albumId from Album where title = "Mirrors" ), (select songId from Song where title = "Where I Belong" )  ) ;
 
-INSERT INTO BandMember (`musicianId`, `bandId`) VALUES 
+insert into BandMember (`musicianId`, `bandId`) values 
  ( (select musicianId from Musician where lastName = "Wilson" and firstName = "Brian" ), (select bandId from Band where name = "The Beach Boys" )  ),
  ( (select musicianId from Musician where lastName = "Love" and firstName = "Mike" ), (select bandId from Band where name = "The Beach Boys" )  ),
  ( (select musicianId from Musician where lastName = "Jardine" and firstName = "Al" ), (select bandId from Band where name = "The Beach Boys" )  ),
@@ -2576,9 +2573,8 @@ INSERT INTO BandMember (`musicianId`, `bandId`) VALUES
  ( (select musicianId from Musician where lastName = "Parsberg" and firstName = "Michael" ), (select bandId from Band where name = "Pegboard Nerds" )  ),
  ( (select musicianId from Musician where lastName = "Odden" and firstName = "Alexander" ), (select bandId from Band where name = "Pegboard Nerds" )  );
 
-## Adding musicians not in any band so that one of the queries gives 
+## Adding musicians not in any band 
 insert into Musician (firstName, lastName, country) values ('Edgar', 'Froese', 'Germany');
 insert into Musician (firstName, lastName, country) values ('Christopher', 'Franke', 'Germany');
 insert into Musician (firstName, lastName, country) values ('Brett', 'Sparks', 'United States');
 
-commit;
