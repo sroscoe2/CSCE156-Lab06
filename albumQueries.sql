@@ -56,7 +56,7 @@
 #     have zero).
 
 # 13. Write a query that lists all albums in the database along with the
-      number of tracks on them.
+#     number of tracks on them.
 
 # 14. Write the same query, but limit it to albums which have 12 or more
 #     tracks on them.
