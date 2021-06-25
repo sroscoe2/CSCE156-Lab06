@@ -1,5 +1,5 @@
 -- Computer Science II
--- Lab 7.0 - Structured Query Language I
+-- Lab 7.0 - Structured Query Language I, II
 -- Queries
 --
 -- Name(s): 
