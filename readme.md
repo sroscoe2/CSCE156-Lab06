@@ -16,7 +16,7 @@ Prior to lab you should read/review the following resources.
 -   Install MySQL Workbench on your own machine:  
     <https://www.mysql.com/products/workbench/>
     
--   Create a MySQL account by logging in here:
+-   Create a MySQL account by logging in here and going to Account Settings:
     <https://cse-apps.unl.edu/amu/login>
 
 -   Change the account password using the following directions at:
