@@ -47,7 +47,7 @@
 -- 9. Write a query list all albums in the database along with the album's
 --    band, but only include the album title, year and band name.
 
--- 10. Write a query that lists all albums and all tracks on the albums 
+-- 10. Write a query that lists all albums and all song titles on the albums 
 --     for the band Nirvana.
 
 -- 11. Write a query that list all bands along with all their albums in 
